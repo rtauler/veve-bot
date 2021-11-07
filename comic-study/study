@@ -1,0 +1,19 @@
+iphone xs (Catpura video i screenshot amb shift+4+space): difeerencia amb canvi de XXs a Xs = 9px
+Xiaomi (captura de scrcpy amb tamany tal cual surt a la pantalla gran HP) XXs a Xs = 8px
+LG (captura de scrcpy amb tamany tal cual pantalla gran HP) XXs a Xs = 10px
+
+
+Xh XXm XXs 0
+Xh XXm Xs 22px
+
+Xh Xm XXs 22px
+Xh Xm Xs 44px
+
+XXm XXs
+XXm Xs 
+
+Xm XXs
+Xm Xs
+
+XXs
+Xs

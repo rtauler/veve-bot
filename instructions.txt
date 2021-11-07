@@ -1,0 +1,5 @@
+control remot de dispositiu:
+scrcpy
+
+compartir internet per usb 
+gnirehtet run
