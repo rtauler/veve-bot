@@ -1,4 +1,5 @@
 import pyautogui
+from pynput.mouse import Button, Controller
 import time
 from mss.darwin import MSS as mss
 import mss.tools
@@ -6,6 +7,8 @@ import mss.tools
 from PIL import Image
 
 from position import get_position
+
+mouse = Controller()
 
 # get positions (x,y)
 selected_pixel = get_position()
@@ -47,11 +50,12 @@ while True:
     start = time.time()
     selected_pixel_color = get_pixel_color()
     if not selected_pixel_color == current_pixel_color:
-        pyautogui.click(selected_pixel[0], selected_pixel[1])
+        # pyautogui.click(selected_pixel[0], selected_pixel[1])
+        mouse.click(Button.left)
         print('clicked! on', selected_pixel[0], selected_pixel[1])
         end = time.time()
         print(end - start)
         break
     else:
         end = time.time()
-        print('false', selected_pixel_color, end - start, end="\r")
+        print('false', selected_pixel_color, end - start)
